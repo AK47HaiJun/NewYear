@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+<meta charset="UTF-8">
+<title>琦琦新年快乐</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/animate.min.css" />
+<link rel="stylesheet" href="syalert/syalert.min.css" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script src="syalert/syalert.min.js"></script>
+</head>
+<style type="text/css">
+  *{ margin:0px; padding:0px; box-sizing:border-box; }
+  *:focus{ outline:none;}
+  .tsm{ background:#333; font-size:13px; color:#fff; margin:20px; margin-top:0px; padding:12px; line-height:25px;}
+  .tsm .p2{ margin-top:12px;}
+  .btns{ padding:20px;}
+  .btns div{ display:block; text-align:center; cursor:pointer; padding:10px; border-radius:5px; background:#0CC; color:#fff; margin-bottom:12px; width:100%;}
+  </style>
+<body>
+  <marquee style=" position: relative;bottom: 0px; color: red; "> <h3>新的一年，我的女孩要快乐。  爱你的小新</h3></marquee>
+
+    <div class="img">
+      <h1>琦琦</h1>
+      <img src="./year.png" alt="">
+    </div>
+    <div class="sy-alert animated alert" sy-enter="zoomIn" sy-leave="zoomOut" sy-type="confirm" sy-mask="true" id="alert1">
+      <div class="sy-title" style="font-size: 9px;color: red;">温馨提示:您的宝贝又陪伴了您一年新的一年，需续费请及时打款。</div>
+      <div class="sy-content "><img src="./apply.png" alt="" style="width: 300px; height: 400px;"></div>
+      <div class="sy-btn">
+        <button onClick="syalert.syhide('alert1')">扫码支付</button>
+        <button onClick="ok('alert1')">微信发红包</button>
+      </div>
+    </div>
+<canvas id="canvas"></canvas>
+
+<div class="block-audio">
+  <audio class="exp" src="m/exp1.mp3" controls></audio>
+  <audio class="exp" src="m/exp1.mp3" controls></audio>
+  <audio class="exp" src="m/exp1.mp3" controls></audio>
+  <audio class="exp" src="m/exp2.mp3" controls></audio>
+  <audio class="exp" src="m/exp2.mp3" controls></audio>
+  <audio class="exp" src="m/exp2.mp3" controls></audio>
+  <audio class="exp" src="m/exp3.mp3" controls></audio>
+  <audio class="exp" src="m/exp3.mp3" controls></audio>
+  <audio class="exp" src="m/exp3.mp3" controls></audio>
+  <audio class="exp" src="m/exp4.mp3" controls></audio>
+  <audio class="exp" src="m/exp4.mp3" controls></audio>
+  <audio class="exp" src="m/exp4.mp3" controls></audio>
+  <audio class="exp" src="m/exp5.mp3" controls></audio>
+  <audio class="exp" src="m/exp5.mp3" controls></audio>
+  <audio class="exp" src="m/exp5.mp3" controls></audio>
+  <audio class="exp" src="m/exp6.mp3" controls></audio>
+  <audio class="exp" src="m/exp6.mp3" controls></audio>
+  <audio class="exp" src="m/exp6.mp3" controls></audio>
+  <audio class="exp" src="m/exp7.mp3" controls></audio>
+  <audio class="exp" src="m/exp7.mp3" controls></audio>
+  <audio class="exp" src="m/exp7.mp3" controls></audio>
+  <audio class="exp" src="m/exp8.mp3" controls></audio>
+  <audio class="exp" src="m/exp8.mp3" controls></audio>
+  <audio class="exp" src="m/exp8.mp3" controls></audio>
+  <audio class="launch" src="m/launch1.mp3" controls></audio>
+  <audio class="launch" src="m/launch1.mp3" controls></audio>
+  <audio class="launch" src="m/launch2.mp3" controls></audio>
+  <audio class="launch" src="m/launch2.mp3" controls></audio>
+  <audio class="launch" src="m/launch3.mp3" controls></audio>
+  <audio class="launch" src="m/launch3.mp3" controls></audio>
+  <audio class="launch" src="m/launch4.mp3" controls></audio>
+  <audio class="launch" src="m/launch4.mp3" controls></audio>
+  <audio class="launch" src="m/launch5.mp3" controls></audio>
+  <audio class="launch" src="m/launch5.mp3" controls></audio>
+</div>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script>
+  function ok(id){
+    syalert.syhide(id);	
+  }
+  window,onload = () => {
+    syalert.syopen('alert1')
+  }
+  </script>
+
+</body>
+</html>
